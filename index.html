@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resumo das NR-06, NR-10 e NR-34</title>
+<style>
+  :root {
+    --fundo: #f3f5f7;
+    --papel: #ffffff;
+    --texto: #1c2733;
+    --suave: #5a6775;
+    --linha: #d5dbe1;
+    --nr06: #1f6f8b;
+    --nr10: #c2410c;
+    --nr34: #3f6b3a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    line-height: 1.55;
+  }
+  header, main { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  header { padding-top: 40px; padding-bottom: 8px; }
+  h1 { font-size: 1.9rem; margin: 0 0 6px; }
+  header p { margin: 0; color: var(--suave); max-width: 60ch; }
+  nav { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+  nav a {
+    text-decoration: none; color: var(--texto); background: var(--papel);
+    border: 1px solid var(--linha); border-radius: 6px; padding: 6px 14px; font-size: .95rem;
+  }
+  nav a:hover, nav a:focus-visible { border-color: var(--texto); outline: none; }
+  section {
+    background: var(--papel);
+    border: 1px solid var(--linha);
+    border-left: 6px solid var(--cor);
+    border-radius: 6px;
+    padding: 22px 24px;
+    margin: 20px 0;
+  }
+  #nr06 { --cor: var(--nr06); }
+  #nr10 { --cor: var(--nr10); }
+  #nr34 { --cor: var(--nr34); }
+  h2 { margin: 0; font-size: 1.3rem; }
+  .sub { margin: 2px 0 14px; color: var(--suave); }
+  h2 span { color: var(--cor); }
+  ul { margin: 0; padding-left: 1.2rem; }
+  li { margin: 6px 0; }
+  li b { color: var(--texto); }
+  footer { max-width: 860px; margin: 0 auto; padding: 8px 20px 40px; color: var(--suave); font-size: .85rem; }
+  @media (max-width: 520px) {
+    h1 { font-size: 1.5rem; }
+    section { padding: 18px 16px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Resumo das NR-06, NR-10 e NR-34</h1>
+  <p>Os pontos principais de cada norma regulamentadora, em poucas linhas.</p>
+  <nav aria-label="Normas">
+    <a href="#nr06">NR-06 · EPI</a>
+    <a href="#nr10">NR-10 · Eletricidade</a>
+    <a href="#nr34">NR-34 · Indústria naval</a>
+  </nav>
+</header>
+
+<main>
+  <section id="nr06">
+    <h2><span>NR-06</span> Equipamentos de Proteção Individual (EPI)</h2>
+    <p class="sub">Define como o EPI é aprovado, vendido, fornecido e usado.</p>
+    <ul>
+      <li>O EPI só pode ser vendido ou usado com <b>Certificado de Aprovação (CA)</b> válido.</li>
+      <li>A empresa fornece o EPI <b>gratuitamente</b>, adequado ao risco e em bom estado, e <b>registra a entrega</b>.</li>
+      <li>A empresa também <b>treina</b>, <b>exige o uso</b>, cuida da higienização e manutenção e <b>substitui</b> o que estiver danificado ou perdido.</li>
+      <li>A escolha do EPI considera a atividade, os riscos e o conforto. Participam SESMT, CIPA e os usuários, e o registro pode ficar no PGR.</li>
+      <li>O trabalhador usa o EPI só para a finalidade prevista, conserva e <b>avisa</b> se ele for danificado ou perdido.</li>
+      <li>Fabricantes e importadores entregam manual em português e marcam nome, lote e número do CA.</li>
+      <li>O Anexo I lista os EPI por parte do corpo: cabeça, olhos e face, ouvidos, respiração, tronco, braços, pernas, corpo inteiro e proteção contra quedas.</li>
+    </ul>
+  </section>
+
+  <section id="nr10">
+    <h2><span>NR-10</span> Segurança em instalações e serviços com eletricidade</h2>
+    <p class="sub">Vale da geração ao consumo de energia, incluindo projeto, montagem, operação e manutenção.</p>
+    <ul>
+      <li>Toda intervenção exige <b>análise de risco</b>. A empresa mantém <b>esquemas unifilares</b> atualizados, e acima de 75 kW também o <b>Prontuário de Instalações Elétricas</b>.</li>
+      <li>A prioridade é a <b>proteção coletiva</b>, começando pela desenergização. O EPI entra quando ela for inviável ou insuficiente. É proibido usar adornos.</li>
+      <li>Para considerar uma instalação <b>desenergizada</b>, siga a ordem: seccionar, impedir a reenergização, constatar a ausência de tensão, aterrar temporariamente, proteger partes energizadas próximas e sinalizar.</li>
+      <li>Trabalho em instalação <b>energizada</b> (50 V ou mais em CA, acima de 120 V em CC) só por pessoal autorizado, com treinamento.</li>
+      <li>Alta tensão (acima de 1000 V em CA) <b>não pode ser feita sozinho</b> e exige ordem de serviço, procedimento específico e comunicação permanente.</li>
+      <li>Autorização depende de qualificação ou capacitação, exame de saúde e <b>curso básico de 40 h</b>. O curso complementar do SEP também tem 40 h, e a reciclagem é a cada <b>2 anos</b>.</li>
+      <li>Os trabalhadores autorizados devem saber fazer <b>resgate e primeiros socorros</b>, incluindo reanimação cardiorrespiratória.</li>
+    </ul>
+  </section>
+
+  <section id="nr34">
+    <h2><span>NR-34</span> Construção, reparação e desmonte naval</h2>
+    <p class="sub">Requisitos de segurança, saúde e meio ambiente para estaleiros e embarcações.</p>
+    <ul>
+      <li>O empregador designa um responsável pela norma e faz <b>APR</b>, <b>Permissão de Trabalho (PT)</b> e <b>Diálogo Diário de Segurança (DDS)</b>. O trabalho para quando as condições ficam perigosas.</li>
+      <li>Treinamento: <b>6 h</b> na admissão e <b>4 h por ano</b> (ou após afastamento maior que 90 dias).</li>
+      <li><b>Trabalho a quente</b> (solda, corte, esmerilhamento): inspeção prévia, proteção contra incêndio, observador quando a APR pedir, cilindros de gás na vertical e fora de espaço confinado.</li>
+      <li><b>Altura</b>: segue a NR-35. Interrompa com vento acima de 40 km/h. Andaimes têm PT e ficha de liberação, e montadores usam cinto paraquedista.</li>
+      <li><b>Jateamento</b> exige ar mandado por linha de ar comprimido e proíbe areia com sílica. Na <b>pintura</b>, pare e evacue se os gases chegarem a 10% do limite de explosividade.</li>
+      <li><b>Movimentação de cargas</b>: check-list diário, sinaleiro treinado (20 h), equipamento certificado e ninguém sob carga suspensa.</li>
+      <li>Outros temas: radiações ionizantes, instalações elétricas provisórias (DR e disjuntores), testes de estanqueidade, estruturas flutuantes e <b>Plano de Respostas às Emergências</b>, revisado a cada 2 anos.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  Resumo feito a partir dos textos das NR-06, NR-10 e NR-34 enviados. Ele não substitui o texto oficial publicado no DOU.
+</footer>
+</body>
+</html>
